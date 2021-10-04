@@ -1,0 +1,24 @@
+import 'dart:io';
+
+
+void main(List<String> arguments)
+{
+  print("Select Your Item");
+    print("1.Burger\n");
+    print("2.Sandwich\n");
+    print("3.Shavarma\n");
+    print("4.Porotta\n");
+    var order = int.parse(stdin.readLineSync().toString());
+    if (order == 1)
+      print("you have orderd Burgur\n");
+    else if(order==2)
+      print("you have orderd Sandwich\n");
+    else if(order==3)
+      print("you have orderd Shavarma\n");
+    else if(order==4)
+      print("you have orderd Porotta\n");
+    else
+      print("Sorry Invalid Option");
+
+
+}

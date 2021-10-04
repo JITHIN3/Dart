@@ -1,0 +1,15 @@
+import 'dart:io';
+import 'dart:math' as math;
+void main()
+
+{
+  print("Enter the length of side");
+  var side=int.parse(stdin.readLineSync().toString());
+  print("Area of a square");
+
+  var area=(side*side);
+  print(area);
+
+
+
+}

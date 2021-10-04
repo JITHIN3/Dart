@@ -1,0 +1,31 @@
+import 'dart:io';
+
+void main(List<String> arguments)
+{
+  print("Enter The Mark");
+  var mark = int.parse(stdin.readLineSync().toString());
+  print("Your Grade");
+  var grade="";
+  if (mark >= 60 && mark <=100)
+  {
+    grade = "A";
+  }
+
+  else if (mark >= 50 && mark <= 59)
+  {
+    grade = "B";
+  }
+  else if (mark >= 40 && mark <= 49) {
+    grade = "C";
+  }
+  else if (mark < 40)
+  {
+    grade = "fail";
+  }
+  else if (mark>=100)
+  {
+    grade = "Invalid Grade";
+  }
+    print(grade);
+
+}
